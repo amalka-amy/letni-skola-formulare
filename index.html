@@ -11,6 +11,72 @@
 
 		<h1>Formuláře</h1>
 
+		<!--
+		action, kam se posílá - pouze server
+		method - get - přidat k adrese, post naopak
+		-->
+
+		<form id="formular">
+			<div class="form-policko"">
+				<label for="jmeno">Jmeno</label>
+				<input id ="jmeno" type="text" maxlength="10" >
+			</div>
+			<div class="form-policko"">
+				<label for="prijmeni">Prijmeni</label>
+				<input id ="prijmeni" type="text" maxlength="10">
+			</div>
+			<div class="form-policko"">
+				<label for="vek">Věk</label>
+				<input id ="vek" type="number" maxlength="3">
+			</div>
+			<div class="form-policko"">
+				<label for="email">E-mail</label>
+				<input id ="email" type="email">
+			</div>
+			<div class="form-policko"">
+				<label for="datum">Datum narození</label>
+				<input id ="datum" type="date">
+			</div>
+			<div class="form-policko"">
+				<label for="adresa">Adresa</label>
+				<textarea id="adresa" cols="25" rows="4"></textarea>
+			</div>
+			<div class="form-policko"">
+				<label for="barva">barva</label>
+				<input id = "barva" type="color">
+			</div>
+			<div class="form-policko"">
+				<label for="mesto">Město</label>
+				<select id="mesto">
+					<option></option>
+					<option>Praha</option>
+					<option>Brno</option>
+					<option>Ostrava</option>
+					<option>České Budějovice</option>
+					<option>Most</option>
+				</select>
+			</div>
+			
+			<div class="form-zaskrtavaci-policko">
+				<input id="spam" type="checkbox"><label for="spam">Souhlasím, ze zasíláním e-mailových blbostí</label>
+			</div>
+			
+			<button>OK</button>
+
+			<!---JINÁ VARIANTA
+			<label>
+				Příjmení
+				<input id ="prijmeni" type="text">
+			</label>
+			-->
+
+
+
+
+
+
+		</form>
+		
 
 
 		<script src="main.js"></script>
